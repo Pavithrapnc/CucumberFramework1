@@ -12,17 +12,17 @@ public class GreencartStepDef {
 	public void user_is_on_the_greencart_page() {
 		WebDriverManager.chromedriver().setup();
 	    WebDriver driver=new ChromeDriver();
+	    driver.get("https://www.google.com");
 	}
 
 	@When("user search with short name")
 	public void user_search_with_short_name() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		System.out.println("home Page");
+		
 	}
 
 	@Then("searched product should display")
 	public void searched_product_should_display() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    System.out.println("hello");
 	}
 }
